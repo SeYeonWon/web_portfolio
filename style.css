@@ -42,14 +42,14 @@
 
 .line_{
     width: 3px;
-    height: 100%;
+    height: 6534px;
     background-color: #777777;
     position: absolute;
     left: 168px;
 }
 .line__{
     width: 2px;
-    height:100%;
+    height: 6534px;
     background-color: #777777;
     position: absolute;
     right: 160px;
@@ -60,7 +60,8 @@
 /* text */
 .cover{
     position: relative;
-    height: 928px;
+    user-select: none;
+    height: 912px;
 }
 .cover .text_1{
     display: flex;
@@ -92,7 +93,7 @@
     color : #777777;
 }
 .cover .text_3 .essential{
-    top: 835px;
+    top: 820px;
     font-size: 95px;
     left: 160px;
 }
@@ -103,7 +104,6 @@
 }
 
 /* line */
-
 .cover .line_1{
     background-color: #777777;
     height: 2px;
@@ -113,21 +113,23 @@
 }
 .cover .line_2{
     background-color: #777777;
-    height: 928px;
+    height: 100%;
+    overflow: hidden;
     width: 2px;
     position: absolute;
     right: 881px;
 }
-.cover .line_3{
+/* .cover .line_3{
     background-color: #777777;
     height: 928px;
     width: 2px;
     position: absolute;
     right: 729px;
-}
+} */
 .cover .line_4{
     background-color: #777777;
-    height: 928px;
+    height: 100%;
+    overflow: hidden;
     width: 2px;
     position: absolute;
     right: 612px;
@@ -144,7 +146,7 @@
     height: 2px;
     width: 100%;
     position: absolute;
-    top: 928px;
+    top: 912px;
 }
 
 /* mind */
@@ -205,7 +207,7 @@
     background-size: 100%;
     background-position: 0px 0px;
     position: absolute;
-    right: 0px;
+    right: 162px;
     top: 147px;
     width: 800px;
     height: 782px;
