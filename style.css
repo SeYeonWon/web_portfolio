@@ -579,7 +579,7 @@
         top: 240px;
     }
     .cover .line_6{
-        top: 915px;
+        top: 815px;
     }
     .cover .text_1 h3{
         font-size: 24px;
@@ -607,11 +607,21 @@
         font-size: 16px;
     }
 
+    .about .main{
+        left: 0;
+        max-width: 528px;
+    }
     .about .title{
         left: 47px;
     }
     .about .title br{
         display: block;
+    }
+    .about .main .image{
+        left: 0px;
+    }
+    .about .main .image img{
+        width: 200px;
     }
 
     .portfolio .title{
