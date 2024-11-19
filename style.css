@@ -237,7 +237,9 @@
     left: 163px;
     top: 12px;
 }
-
+.about .title br{
+    display: none;
+}
 .about .main{
     position: absolute;
     left: 164px;
@@ -542,7 +544,7 @@
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 528px) {
     *{
         padding: 0;
         margin: 0;
@@ -557,7 +559,7 @@
         display: flex;
     }
     .cover{
-        height: 740px;
+        height: 915px;
     }
     .cover .text_1 h1{
         font-size: 73px;
@@ -577,7 +579,7 @@
         top: 240px;
     }
     .cover .line_6{
-        top: 740px;
+        top: 915px;
     }
     .cover .text_1 h3{
         font-size: 24px;
@@ -591,7 +593,7 @@
         right: 72px;
     }
 
-    .mind .title, .about .title, .portfolio .title {
+    .mind .title, .portfolio .title {
         font-size: 36px;
         left: 46px;
     }
@@ -606,5 +608,17 @@
     }
     .mind .main .text{
         font-size: 16px;
+    }
+
+    .about .title{
+        font-size: 24px;
+        left: 47px;
+    }
+    .about .title br{
+        display: block;
+    }
+
+    .portfolio .title{
+        left: 48px;
     }
 }
