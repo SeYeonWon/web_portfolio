@@ -41,14 +41,14 @@
 }
 
 .line_{
-    width: 3px;
+    width: 1px;
     height: 6534px;
     background-color: #777777;
     position: absolute;
     left: 168px;
 }
 .line__{
-    width: 2px;
+    width: 1px;
     height: 6534px;
     background-color: #777777;
     position: absolute;
@@ -77,14 +77,15 @@
     position: absolute;
     font-size: 50px;
     top: 170px;
-    right: 388px;
+    right: 386px;
+    color : #777777;
     font-family: 'Paperlogy-4Regular';
 }
 .cover .text_2 h1{
     position: absolute;
     font-size: 200px;
     font-family: 'Paperlogy-8ExtraBold';
-    top: 450px;
+    top: 449px;
     left: 580px;
 }
 .cover .text_3 h3{
@@ -106,7 +107,7 @@
 /* line */
 .cover .line_1{
     background-color: #777777;
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     top: 218px;
@@ -115,7 +116,7 @@
     background-color: #777777;
     height: 100%;
     overflow: hidden;
-    width: 2px;
+    width: 1px;
     position: absolute;
     right: 881px;
 }
@@ -130,13 +131,13 @@
     background-color: #777777;
     height: 100%;
     overflow: hidden;
-    width: 2px;
+    width: 1px;
     position: absolute;
     right: 612px;
 }
 .cover .line_5{
     background-color: #777777;
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     top: 645px;
@@ -170,6 +171,9 @@
     top: 928px;
 }
 
+.mind .title br{
+    display: none;
+}
 .mind .title ,.mind .main{
     position: absolute;
     margin: 0;
@@ -178,7 +182,7 @@
 .mind .title{
     font-family: 'Paperlogy-8ExtraBold';
     font-size: 65px;
-    left: 164px;
+    left: 163px;
     top: 12px;
 }
 .mind .main{
@@ -230,7 +234,7 @@
     font-family: 'Paperlogy-8ExtraBold';
     position: absolute;
     font-size: 65px;
-    left: 164px;
+    left: 163px;
     top: 12px;
 }
 
@@ -341,7 +345,7 @@
 
 .box .percent.html svg circle:nth-child(2) {
     stroke-dashoffset: 283;
-    stroke: #d1481e;
+    stroke: #e75c32;
     animation: progressCircleHtml 1s linear forwards;
 }
 
@@ -427,7 +431,7 @@
     font-family: 'Paperlogy-8ExtraBold';
     position: absolute;
     font-size: 65px;
-    left: 167px;
+    left: 166px;
     top: 12px;
 }
 
@@ -480,7 +484,7 @@
 
 .footer h3{
     position: absolute;
-    left: 810px;
+    left: 760px;
     top: 50px;
     font-size: 20px;
     font-family: 'Paperlogy-4Regular';
@@ -535,4 +539,60 @@
 .project.visible {
     opacity: 1; /* 보이게 설정 */
     transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+
+@media screen and (max-width: 540px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .line_{
+        left: 64px;
+    }
+    .line__{
+        right: 64px;
+    }
+    .text_1{
+        min-width: 540px;
+        display: flex;
+    }
+    .cover{
+        max-width: 540px;
+    }
+    .cover .text_1 h1{
+        font-size: 92px;
+        padding-left: 14px;
+        padding-top: 16px;
+    }
+    .cover .line_1{
+        top: 80px;
+    }
+    .cover .text_1 h3{
+        font-size: 24px;
+        top: 78px;
+        right: 70px;
+    }
+    .cover .text_2 h1{
+        font-size: 92px;
+        top: 120px;
+        right: 72px;
+    }
+
+    .mind .title{
+        font-size: 36px;
+        left: 61px;
+    }
+    .mind .title br{
+        display: block;
+    }
+    .mind .main{
+        left: 62px;
+    }
+    .mind .main .subtitle{
+        font-size: 20px;
+    }
+    .mind .main .text{
+        font-size: 16px;
+    }
 }
