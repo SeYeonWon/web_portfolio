@@ -559,7 +559,7 @@
         display: flex;
     }
     .cover{
-        height: 915px;
+        height: 728px;
     }
     .cover .text_1 h1{
         font-size: 73px;
@@ -592,6 +592,11 @@
         top: 120px;
         right: 72px;
     }
+    .cover .text_3 .essential{
+        font-size: 77px;
+        left: 42px;
+        top: 653px;
+    }
 
     .mind .title,.about .title, .portfolio .title {
         font-size: 28px;
@@ -618,10 +623,11 @@
         display: block;
     }
     .about .main .image{
-        left: 0px;
+        left: 108px;
     }
     .about .main .image img{
         width: 200px;
+        h
     }
 
     .portfolio .title{
