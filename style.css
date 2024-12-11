@@ -183,7 +183,7 @@
     font-family: 'Paperlogy-8ExtraBold';
     font-size: 65px;
     left: 163px;
-    top: 12px;
+    top: 38px;
 }
 .mind .main{
     left: 167px;
@@ -269,6 +269,9 @@
     font-family: 'Paperlogy-7Bold';
     font-size: 65px;
 }
+.about .main .subtitle h1 br{
+    display: none;
+}
 .about .main .subtitle h5{
     font-family: 'Paperlogy-3Light';
     font-size: 18px;
@@ -327,14 +330,16 @@
     stroke-linecap: round;
     stroke-dasharray: 283; /* 2 * Math.PI * 45 (where 45 is the radius) */
 }
-
+.box .mobile{
+    display: none;
+}
 .box .percent svg circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #f3f3f3;
 }
 
 .box .percent.illust svg circle:nth-child(2) {
-    stroke-dashoffset: 283; /* Full circle dash offset */
+    stroke-dashoffset: 283;
     stroke: #f39c12;
     animation: progressCircleIllust 1s linear forwards;
 }
@@ -551,9 +556,11 @@
     }
     .line_{
         left: 49px;
+        height: 3800px;
     }
     .line__{
         right:49px;
+        height: 3800px;
     }
     .text_1{
         display: flex;
@@ -561,45 +568,51 @@
     .cover{
         height: 728px;
     }
-    .cover .text_1 h1{
-        font-size: 73px;
-        padding-left: 13px;
-        padding-top: 19px;
-    }
     .cover .line_1{
-        top: 64px;
+        top: 150px;
     }
     .cover .line_2{
-        right: 206px;
+        right: 185px;
     }
     .cover .line_4{
         display: none;
     }
     .cover .line_5{
-        top: 240px;
+        top: 520px;
     }
     .cover .line_6{
         top: 728px;
     }
+    .cover .text_1 h1{
+        font-size: 73px;
+        padding-left: 13px;
+        padding-top: 105px;
+    }
     .cover .text_1 h3{
         font-size: 24px;
-        top: 78px;
-        right: 61px;
+        top: -5px;
+        right: 77px;
         opacity: .5;
     }
     .cover .text_2 h1{
-        font-size: 92px;
-        top: 120px;
-        right: 72px;
+        font-size: 73px;
+        top: 449px;
+        left: 137px;
     }
     .cover .text_3 .essential{
-        font-size: 77px;
-        left: 42px;
-        top: 653px;
+        font-size: 61px;
+        left: 44px;
+        top: 668px;
+    }
+    .cover .text_3 .salt{
+        font-size: 43px;
+        right: 66px;
+        top: 515px;
     }
 
+    
     .mind .title,.about .title, .portfolio .title {
-        font-size: 28px;
+        font-size: 32px;
         left: 46px;
     }
     .mind .main{
@@ -611,6 +624,16 @@
     .mind .main .text{
         font-size: 16px;
     }
+    .mind .img{
+        background-image: url(img/소금이미지_m.png);
+        background-position: 50px -100px;
+        background-size: 100%;
+        right: 50px;
+        top: 147px;
+        width: 500px;
+        height: 782px;
+    }
+    
 
     .about .main{
         left: 0;
@@ -623,14 +646,164 @@
         display: block;
     }
     .about .main .image{
-        left: 108px;
+        left: 70px;
+        top: 170px;
     }
     .about .main .image img{
-        width: 200px;
-        h
+        width: 150px;
+    }
+    .about .main .subtitle{
+        left: 240px;
+        top: 240px;
+    }
+    .about .main .subtitle h3{
+        font-family: 'Paperlogy-3Light';
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .about .main .subtitle h1 br{
+        display: block;
+    }
+    .about .main .subtitle h1{
+        font-family: 'Paperlogy-7Bold';
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    .about .main .subtitle h5{
+        font-family: 'Paperlogy-3Light';
+        font-size: 14px;
+    }
+
+    .about .main .education{
+        margin-top: 50px;
+        left: 70px;
+        top: 424px;
+    }
+    .about .main .education h2{
+        font-family: 'Paperlogy-6SemiBold';
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    .about .main .education p{
+        font-family: 'Paperlogy-4Regular';
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .about .main .education p span{
+        font-size: 14px;
+    }
+
+    .about .main .tool h2{
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    .about .main .tool{
+        margin-top: 80px;
+        left: 70px;
+        top: 620px;
+    }
+
+    .box .percent svg{
+        display: none;
+    }
+    .about .main .tool .box .percent .mobile {
+        width: 60px;
+        height: 60px;
+        padding-right: 10px;
+        transform: rotate(-90deg);
+    }
+    .box .percent .mobile{
+        display: flex;
+    }
+    .box .percent .mobile circle {
+        width: 50px;
+        height: 50px;
+        stroke-dasharray: 157.08;
+    }
+
+    .box .percent.illust .mobile circle:nth-child(2){
+        stroke-dashoffset: 157.08;
+    }
+    .box .percent.photoshop .mobile circle:nth-child(2) {
+        stroke-dashoffset: 157.08;
+    }
+    
+    .box .percent.html .mobile circle:nth-child(2) {
+        stroke-dashoffset: 157.08;
+    }
+    
+    .box .percent.css .mobile circle:nth-child(2) {
+        stroke-dashoffset: 157.08;
+    }
+    .box .percent.figma .mobile circle:nth-child(2) {
+        stroke-dashoffset: 157.08;
+    }
+    @keyframes progressCircleIllust {
+        100% {
+            stroke-dashoffset: 47.12;
+        }
+    }
+    
+    @keyframes progressCirclePhotoshop {
+        100% {
+            stroke-dashoffset: 78.54;
+        }
+    }
+    
+    @keyframes progressCircleHtml {
+        100% {
+            stroke-dashoffset: 48.51;
+        }
+    }
+    
+    @keyframes progressCircleCss {
+        100% {
+            stroke-dashoffset: 63.22;
+        }
+    }
+    
+    @keyframes progressCircleFigma {
+        100% {
+            stroke-dashoffset: 67.64;
+        }
+    }
+
+    .box .percent img{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        top: 65px;
+        margin-left: 18px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box .percent.html img, .box .percent.css img{
+        border-radius: 20px;
     }
 
     .portfolio .title{
+        margin-top: 25px;
         left: 48px;
     }
+    .portfolio{
+        height: 1090px;
+    }
+    .portfolio .work__project {
+        padding: 20px;
+        top: 150px;
+        left: 90px;
+    }
+    
+    .footer{
+        height: 120px;
+    }
+    
+    .footer h3{
+        left: 90px;
+        top: 50px;
+        font-size: 15px;
+        font-family: 'Paperlogy-4Regular';
+    }
+
 }
